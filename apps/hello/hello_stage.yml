@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hello
+  name: hello-stage
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
@@ -21,8 +21,8 @@ spec:
     targetRevision: HEAD
     path: charts/hello-world
     helm:
-      releaseName: hello
+      releaseName: hello-stage
       valuesObject:
-        host: a-hello.eon.sikademo.com
+        host: a-hello-stage.eon.sikademo.com
         replicas: 2
-        TEXT: "Hello EON from ArgoCD!"
+        TEXT: "[STAGE] Hello EON from ArgoCD!"
