@@ -11,7 +11,6 @@ spec:
   syncPolicy:
     automated:
       prune: true
-      selfHeal: true
   source:
     repoURL: https://github.com/sika-training-examples/2023-10-24_argocd_apps_eon.git
     targetRevision: HEAD
