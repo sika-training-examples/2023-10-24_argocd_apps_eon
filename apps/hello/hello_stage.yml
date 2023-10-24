@@ -26,3 +26,4 @@ spec:
         host: a-hello-stage.eon.sikademo.com
         replicas: 2
         TEXT: "[STAGE] Hello EON from ArgoCD!"
+        image: sikalabs/hello-world-server:eon
